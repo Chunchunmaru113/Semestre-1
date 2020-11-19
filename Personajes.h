@@ -15,6 +15,7 @@ class Personajes{
   public:
     Personajes();//Constructor por default
     Personajes (string nombre, int nivel);
+    void set_nivel(int n)//Setter del nivel del personaje
     string get_nombre();//Getter
     int get_nivel();//Getter
 };
@@ -27,6 +28,10 @@ Personajes::Personajes(){
 //Constructor donde recibe valores para llenar las variables de instancia
 Personajes::Personajes(string n, int l){
   nombre=n;
+  nivel=l;
+}
+//Setter del nivel del personaje
+void set_nivel(int l){
   nivel=l;
 }
 //Getter del nombre del Personaje
